@@ -1,0 +1,100 @@
+body {
+  background-color: bisque;
+}
+
+body nav {
+  display: grid;
+  justify-content: center;
+}
+
+nav {
+  display: grid;
+  justify-content: center;
+}
+
+nav ul {
+  display: inline;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+nav li a:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  color: red;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  grid-gap: 0.8em;
+  background-color: rgb(250, 81, 81);
+  padding: 1.2em;
+  border-radius: 10px;
+}
+
+.grid {
+  list-style-type: none;
+}
+
+.grid li label {
+  display: grid;
+  grid-column: 1;
+  grid-row: auto;
+}
+.grid input,
+.grid textarea,
+.grid button {
+  display: grid;
+  grid-column: 1;
+  grid-row: auto;
+  border: none;
+  padding: 1em;
+}
+
+.grid textarea {
+  padding: 15px;
+  border: none;
+  resize: none;
+  height: 4em;
+  width: 25em;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.grid li label {
+  padding: 8px;
+  font-weight: 200;
+  letter-spacing: 0.5em;
+}
+
+.grid li button {
+  display: grid;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 10px 0;
+  margin-left: auto;
+  padding: 20px 16px;
+  border: none;
+  background-color: rgb(255, 240, 240);
+  border-radius: 10px;
+}
+
+.grid li button:hover {
+  background-color: sandybrown;
+  transition: 0.8s;
+  border-radius: 15px;
+}
+
+@media (min-width: 600px) {
+  .grid textarea {
+    max-width: 100%;
+  }
+}

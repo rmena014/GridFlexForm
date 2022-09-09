@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles2.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Flex</a></li>
+            <li><a href="grid.html">Grid</a></li>
+        </ul>
+    </nav>
+    <main>
+      <div class="container">
+        <form>
+          <ul class="grid">
+            <li>
+              <label for="full-name">Full Name: </label>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Please enter Full Name"
+                required
+              />
+            </li>
+            <li>
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Please enter your email"
+                required
+              />
+            </li>
+            <li>
+              <label for="phone">Phone: </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="XXX-XXX-XXXX"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+              />
+            </li>
+            <li>
+              <label for="messages">Questions, Comments and Concerns</label>
+              <textarea class="field" placeholder="Optional Message"></textarea>
+              <li>
+              <button class="btn">Send Form</button>
+            </li>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </main>
+</body>
+</html>
